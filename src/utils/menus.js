@@ -106,22 +106,22 @@ Menus.right = [
 	},
 	{
 		name:'邮箱绑定',
-		path:'000',
+		path:'/user_mail',
 		img:userMail
 	},
 	{
 		name:'登录密码',
-		path:'000',
+		path:'/user_pwd',
 		img:userPassword
 	},
 	{
 		name:'结算密码',
-		path:'000',
+		path:'/user_result',
 		img:userResult
 	},
 	{
 		name:'支付宝绑定',
-		path:'000',
+		path:'/manage_bound_alipay',
 		img:manageCard
 	},
 	{

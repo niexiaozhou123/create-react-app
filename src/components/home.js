@@ -35,12 +35,14 @@ export default class Home extends Component{
 	
 	leftOpenChange(e){
 		this.setState({
-			openLeft:!this.state.openLeft
+			openLeft:!this.state.openLeft,
+			openRight:false
 		});
 	}
 	rightOpenChange(e){
 		this.setState({
-			openRight:!this.state.openRight
+			openRight:!this.state.openRight,
+			openLeft:false
 		});
 	}
 	goPath(item){
@@ -86,11 +88,6 @@ export default class Home extends Component{
 			<p></p>
 			);
 			
-		var btn = {
-			width:'100%',
-			zIndex:'1',
-			marginLeft:'30px'
-		};
 		
 		
 		
@@ -105,7 +102,7 @@ export default class Home extends Component{
 					]}
 					onLeftClick={this.leftOpenChange}
 					rightContent={[
-						// <Icon key="0" type="search" style={btn} onClick={this.rightOpenChange}/>,
+						
 						<img src={navbarImg} style={{width:'20px',height:'20px',background:'#ffffff',zIndex:'2'}} onClick={this.rightOpenChange}/>,
 						<label style={{zIndex:'2'}} onClick={this.rightOpenChange}>info</label>						
 					]}

@@ -12,6 +12,15 @@ export default {
 	},
 	
 	
+	checkEmail:function(email){
+		if((/^(?:\w+\.?)*\w+@(?:\w+\.)*\w+$/.test(email))){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	
 	
 	
 	
