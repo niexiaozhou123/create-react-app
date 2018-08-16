@@ -31,6 +31,7 @@ export default class UserInfo extends Component{
 	}
 	
 	load(){
+		Toast.loading('正在加载数据..',2,null,true)
 		axios.post('api/Promoters/list',{
 			token:user.token
 		}).then((res)=>{

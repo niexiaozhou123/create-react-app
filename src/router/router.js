@@ -12,6 +12,7 @@ import UserPwd from '../components/user_password';
 import UserResult from '../components/user_result';
 import UserMail from '../components/user_mail';
 import ManageBoundAlipay from '../components/manage_bound_alipay';
+import ManageAlipayTransfer from '../components/manage_alipay_transfer';
 
 
 
@@ -33,6 +34,7 @@ import NotFound from '../components/404';
 					<Route path ='/user_result' component={UserResult} />
 					<Route path ='/user_mail' component={UserMail} />
 					<Route path ='/manage_bound_alipay' component={ManageBoundAlipay} />
+					<Route path ='/manage_alipay_transfer' component={ManageAlipayTransfer} />
 					
 					
 					

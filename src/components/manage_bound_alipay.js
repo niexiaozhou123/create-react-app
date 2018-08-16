@@ -73,7 +73,7 @@ export default class UserPwd extends Component{
 	
 	
 	checkAlipay(){
-		
+		Toast.loading('正在加载数据..',2,null,true)
 		axios.post('api/bill/getAlipay',{
 			token:user.token,	
 		})
